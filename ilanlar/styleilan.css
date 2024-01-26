@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&family=Roboto:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+
+:root {
+    --background-color: #fff;
+    --black-color: #000000;
+}
+
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+/* base html codes */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Header Section */
+
+.main-header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    
+}
+
+.main-nav img{
+    width: 90px;
+    margin: 10px 30px;
+}
+
+.main-nav__items{
+    display: inline-block;
+    position: absolute;
+    margin-top: 40px;
+}
+
+
+.main-nav__item{
+    font-size: 18px;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 30px px 50px;
+    text-align: right;
+    
+}
+
+li a{
+    color: black;
+    margin-left: 220px;
+    overflow: hidden;
+}
+
+.main-nav i{
+    display: inline-block;
+    margin-left: 100px;
+}
+
+
+a:hover{
+    animation: anim2 500ms cubic-bezier(0.175, 0.885, 0.32, 0.275) infinite;
+}
+
+
+/* Header Section End */
+
+
+/* Content Section Start */
+
+.ilan{
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 80px 20px;
+    border: 1px solid rgb(236, 233, 233);
+    background-color: rgb(236, 233, 233);
+    display: inline-block;
+    overflow: hidden;
+}
+
+.ilan .content h1{
+    margin: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+}
+
+.ilan .content p{
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.ilan .content span{
+    font-size:18px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.ilan .detailbox{
+    background-color: rgb(236, 233, 233);
+    column-count: 2;
+    width: 1600px;
+    height: 600px;
+    text-align: left;
+    word-wrap: break-word;
+    margin: 20px;
+}
+    
+
+
+.ilan .detailbox img{
+    width: 750px;
+    margin-left: 0px;
+}
+
+.ilan .detailbox .details{
+    margin: 50px 200px 100px 10px;
+    display: inline;
+    word-wrap: break-word;
+    padding-left: 150px;
+    
+    
+}
+
+
+
+/* Content Section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section Start */
+
+.footer{
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-box .share{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.footer-box .contact{
+    margin-top: 50px;
+    width: 100%;
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+    padding-right: 70px;
+}
+
+.footer-box .contact h1{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.footer-box .contact .box{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 50px;
+}
+
+.footer a{
+    color:#000
+}
+
+#mail a{
+    text-transform: lowercase;
+}
+
+
+.footer .rights p{
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+}
+
+.footer .rights span{
+    color: #f55951;
+}
+
+
+
+/* Footer Section End */
+
+
+
+
+
+
+
+
+
+
