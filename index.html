@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,11 +14,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Onlife Gayrimenkul</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="SCSS/_variables.scss">
 </head>
 
 <body>
-
     <!-- HEADER SECTİON START-->
     <header class="main-header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
@@ -71,13 +68,15 @@
     <!-- HEADER SECTİON END-->
     <!-- HOME SECTİON START-->
     <section class="home">
-
         <div class="links">
             <div class="instagram">
-                <a href="www.instagram.com/onlifegayrimenkul"><img width="40px" src="img/instagram.png" alt=""></a>
+                <a href="https://www.instagram.com/on_lifegayrimenkul/"><img width="40px" src="img/instagram.png"
+                        alt=""></a>
             </div>
             <div class="sahibinden">
-                <a href="www.sahibinden.com"><img style="border-radius: 7px;" width="40px" src="img/sahibinden_icon_v13012023.png" alt=""></a>
+                <a
+                    href="https://laringayrimenkul.sahibinden.com/emlak?sorting=storeShowcase&userId=aGUpTY1OmySjcZIDxOWscDA"><img
+                        style="border-radius: 7px;" width="40px" src="img/sahibinden_icon_v13012023.png" alt=""></a>
             </div>
         </div>
 
@@ -85,19 +84,14 @@
         <div class="form">
             <h3>İletişime Geç</h3>
             <form action="mail.php" method="POST">
-
                 <input type="text" name="name" id="name" placeholder="Ad Soyad:">
-
                 <input type="number" name="phone" id="phone" placeholder="Telefon Numarası:">
-
                 <input type="email" name="email" id="email" placeholder="E-posta:">
-
                 <textarea name="message" cols="30" rows="10" placeholder="Mesaj:"></textarea>
                 <input class="btn" id="send-btn" type="submit" value="Gönder">
             </form>
-
         </div>
-        
+
         <div class="container">
             <h3>HAYALLERİNİZE ŞİMDİ ULAŞIN</h3>
             <div class="inputs">
@@ -187,9 +181,9 @@
                         <option value="Zonguldak">Zonguldak</option>
                     </select>
                 </div>
-                <div class="property">
+                <div class="type">
                     <p>Kategori</p>
-                    <select name="" id="type">
+                    <select name="Kategori" id="type">
                         <option value="1">Satılık Daire</option>
                         <option value="2">Kiralık Daire</option>
                         <option value="3">Tarla</option>
@@ -200,7 +194,7 @@
                 </div>
                 <div class="price">
                     <p>Fiyat</p>
-                    <select name="" id="price">
+                    <select name="Fiyat" id="price">
                         <option value="1">0₺ - 100.000₺</option>
                         <option value="2">100.000₺ - 200.000₺</option>
                         <option value="3">200.000₺ - 300.000₺</option>
@@ -213,21 +207,21 @@
                         <option value="10">2.000.000₺ - 4.000.000₺</option>
                         <option value="11">4.000.000₺ - 6.000.000₺</option>
                         <option value="12">6.000.000₺ + ..........</option>
-    
                     </select>
                 </div>
-                <button>Ara</button>   
-            </div> 
+                <button>Ara</button>
+            </div>
         </div>
     </section>
 
 
 
-    
+
     <!-- HOME SECTİON END-->
 
+
     <!-- Carousel Section Start-->
-    
+
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -238,6 +232,24 @@
             </div>
             <div class="carousel-item">
                 <img src="img/5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-ketut-subiyanto-4246234.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-luis-yanez-206172.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-naim-benjelloun-2029694.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-pixabay-276554.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-terry-magallanes-3623770.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-vecislavas-popa-1571463.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
     </div>
@@ -270,7 +282,6 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
                 </div>
             </div>
             <div class="card">
@@ -287,7 +298,6 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
                 </div>
             </div>
             <div class="card">
@@ -304,7 +314,6 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
                 </div>
             </div>
             <div class="card">
@@ -321,7 +330,6 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
                 </div>
             </div>
             <div class="card">
@@ -338,7 +346,6 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
                 </div>
             </div>
             <div class="card">
@@ -355,7 +362,6 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
                 </div>
             </div>
             <div class="card">
@@ -372,7 +378,6 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
                 </div>
             </div>
             <div class="card">
@@ -389,7 +394,6 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
                 </div>
             </div>
             <div class="card">
@@ -406,7 +410,118 @@
                 </ul>
                 <div class="card-body" id="link">
                     <a href="#" class="card-link">İlana Git</a>
-
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">İLAN BAŞLIĞI</h5>
+                    <p class="card-text">Açıklama Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        debitis facilis expedita molestias dolorem, est laboriosam eum sequi praesentium esse!</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Konum: <span></span></li>
+                    <li class="list-group-item">Özellikler: <span></span></li>
+                    <li class="list-group-item">Fiyat: <span> ₺₺₺</span></li>
+                </ul>
+                <div class="card-body" id="link">
+                    <a href="#" class="card-link">İlana Git</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">İLAN BAŞLIĞI</h5>
+                    <p class="card-text">Açıklama Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        debitis facilis expedita molestias dolorem, est laboriosam eum sequi praesentium esse!</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Konum: <span></span></li>
+                    <li class="list-group-item">Özellikler: <span></span></li>
+                    <li class="list-group-item">Fiyat: <span> ₺₺₺</span></li>
+                </ul>
+                <div class="card-body" id="link">
+                    <a href="#" class="card-link">İlana Git</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">İLAN BAŞLIĞI</h5>
+                    <p class="card-text">Açıklama Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        debitis facilis expedita molestias dolorem, est laboriosam eum sequi praesentium esse!</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Konum: <span></span></li>
+                    <li class="list-group-item">Özellikler: <span></span></li>
+                    <li class="list-group-item">Fiyat: <span> ₺₺₺</span></li>
+                </ul>
+                <div class="card-body" id="link">
+                    <a href="#" class="card-link">İlana Git</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">İLAN BAŞLIĞI</h5>
+                    <p class="card-text">Açıklama Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        debitis facilis expedita molestias dolorem, est laboriosam eum sequi praesentium esse!</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Konum: <span></span></li>
+                    <li class="list-group-item">Özellikler: <span></span></li>
+                    <li class="list-group-item">Fiyat: <span> ₺₺₺</span></li>
+                </ul>
+                <div class="card-body" id="link">
+                    <a href="#" class="card-link">İlana Git</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">İLAN BAŞLIĞI</h5>
+                    <p class="card-text">Açıklama Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        debitis facilis expedita molestias dolorem, est laboriosam eum sequi praesentium esse!</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Konum: <span></span></li>
+                    <li class="list-group-item">Özellikler: <span></span></li>
+                    <li class="list-group-item">Fiyat: <span> ₺₺₺</span></li>
+                </ul>
+                <div class="card-body" id="link">
+                    <a href="#" class="card-link">İlana Git</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">İLAN BAŞLIĞI</h5>
+                    <p class="card-text">Açıklama Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        debitis facilis expedita molestias dolorem, est laboriosam eum sequi praesentium esse!</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Konum: <span></span></li>
+                    <li class="list-group-item">Özellikler: <span></span></li>
+                    <li class="list-group-item">Fiyat: <span> ₺₺₺</span></li>
+                </ul>
+                <div class="card-body" id="link">
+                    <a href="#" class="card-link">İlana Git</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">İLAN BAŞLIĞI</h5>
+                    <p class="card-text">Açıklama Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        debitis facilis expedita molestias dolorem, est laboriosam eum sequi praesentium esse!</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Konum: <span></span></li>
+                    <li class="list-group-item">Özellikler: <span></span></li>
+                    <li class="list-group-item">Fiyat: <span> ₺₺₺</span></li>
+                </ul>
+                <div class="card-body" id="link">
+                    <a href="#" class="card-link">İlana Git</a>
                 </div>
             </div>
             <div class="card">
@@ -427,12 +542,7 @@
                 </div>
             </div>
 
-
         </div>
-
-
-
-
     </section>
 
 
@@ -495,9 +605,9 @@
         </div>
     </section>
 
-
-
     <!-- FOOTER SECTİON END-->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
