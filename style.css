@@ -19,7 +19,7 @@
     transition: 1s ease;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -68,49 +68,50 @@ body {
 /* Header Section */
 
 
+
 .main-header .navbar-brand {
     padding-left: 20px;
-    font-size: 3rem;
     transition: 1s ease;
 }
 
-.main-header .navbar-brand:hover{
+.main-header .navbar-brand:hover {
     transform: scale(1.1);
 }
 
 .navbar {
     overflow: hidden;
     padding: 0;
+    margin: 0;
+    height: fit-content;
     position: relative;
 }
 
-.container-fluid{
+.container-fluid {
+    height: fit-content;
     background-color: #ffffff;
 }
 
 
 .container-fluid {
     position: sticky;
-    padding: 10px;
 }
 
-.container-fluid img{
-    width: 8rem;
+.container-fluid img {
+    width: 6rem;
 }
 
 .collapse .nav-item {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0 20px;
 }
 
 .collapse .nav-item a {
     display: block;
-    padding: 5px 15px;
     transition: 1s ease;
 }
 
-.navbar-collapse .navbar-nav{
-  align-items: end;
+.navbar-collapse .navbar-nav {
+    align-items: end;
 }
 
 
@@ -132,7 +133,9 @@ body {
     padding: 0 20px;
 }
 
-.main-header .navbar form button{
+
+
+.main-header .navbar form button {
     background-color: rgb(0, 0, 0);
     border: none;
     padding: 3px 20px;
@@ -169,27 +172,31 @@ body {
     margin: 0 20px;
 }
 
-.home .links img{
+.home .links img {
     margin: 10px;
     opacity: 0.7;
     transition: 1s ease;
 }
-.home .links img:hover{
+
+.home .links img:hover {
     opacity: 1;
     transform: scale(1.1);
 }
 
 
-.home .container{
+.home .container {
     display: flex-box;
+    position: absolute;
     width: fit-content;
-    padding: 0;
-    margin-top: 20%;
+    right: 30%;
+    bottom: 0%;
+
+    
 }
 
-.home .container h3{
+.home .container h3 {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: left;
     padding: 5px 40px 5px 30px;
     border-top-right-radius: 15px;
@@ -200,26 +207,26 @@ body {
     width: fit-content;
 }
 
-.home .container .inputs{
+.home .container .inputs {
     opacity: 1;
     display: flex;
     margin: auto;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
 
-.home .container .inputs div{
+.home .container .inputs div {
     padding: 20px 30px;
     background-color: rgba(0, 0, 0, 0.708);
 }
 
-.home .container .inputs div p{
+.home .container .inputs div p {
     text-align: left;
     color: white;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
-.home .container .inputs div select{
+.home .container .inputs div select {
     background-color: rgba(0, 0, 0, 0.567);
     font-size: 15px;
     height: 40px;
@@ -227,21 +234,22 @@ body {
     color: white;
 }
 
-.home .container .inputs div select option:active{
+.home .container .inputs div select option:active {
     background-color: #95B8D1;
     font-size: 20px;
 }
 
-.home .container .inputs button{
+.home .container .inputs button {
     width: 110px;
-    height: 112px;
-    font-size: 20px;
+    height: 120px;
+    font-size: 1.5rem;
+    border-top-right-radius: 15px;
     background-color: rgba(0, 0, 0, 0.708);
     color: white;
     transition: 1s ease;
 }
 
-.home .container .inputs button:hover{
+.home .container .inputs button:hover {
     transform: scale(1.03);
     background-color: rgb(0, 0, 0);
 }
@@ -259,7 +267,7 @@ body {
     margin-top: 50px;
 }
 
-.form h3{
+.form h3 {
     text-align: center;
     color: whitesmoke;
     padding: 0;
@@ -375,9 +383,7 @@ form #send-btn:hover {
 }
 
 .ilanlar .nav-links li:hover {
-    
     transform: scale(1.2);
-    
 }
 
 .ilanlar .nav-links li a {
@@ -392,27 +398,24 @@ form #send-btn:hover {
     display: flex;
     width: 100%;
     position: relative;
-    margin: 50px 100px;
+    margin: 3rem 0;
     flex-wrap: wrap;
-    
 }
 
 .ilanlar .card {
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    margin: 3rem;
-    width: 320px;
+    margin: auto;
+    width: 350px;
+    margin-top: 3rem;
     height: 20%;
     background-color: #e5e2e2;
-    
-    filter: blur(none);
 }
 
 
 
 .ilanlar .card:hover {
-    box-shadow: 0px 0px 15px 10px #f3dae6;
+    transform: scale(1.05);
 }
 
 .ilanlar .card #link {
@@ -460,10 +463,9 @@ form #send-btn:hover {
 
 .wrapper {
     min-height: 60vh;
-    color: #000;
+    color: #000000af;
     font-family: 'Muli', sans-serif;
     font-size: 1rem;
-    background-color: #f3e1e9b2;
     display: -ms-grid;
     display: grid;
     place-items: center;
@@ -472,7 +474,7 @@ form #send-btn:hover {
 }
 
 .wrapper .container {
-    background-color: #fff;
+    background-color: #ebe9e9;
     padding: 1em;
     border-radius: 1em;
     max-width: 768px;
@@ -481,9 +483,13 @@ form #send-btn:hover {
     place-items: center;
     max-width: 400px;
     overflow: hidden;
-    padding: 0;
-    -webkit-box-shadow: 0px 17px 34px -20px #f55951;
-    box-shadow: 0px 17px 34px -20px #f55951;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(153, 145, 153, 1);
+    transition: 1s ease;
+}
+
+.wrapper .container:hover{
+    transform: scale(1.05);
 }
 
 .title {
@@ -491,27 +497,7 @@ form #send-btn:hover {
     font-weight: 700;
 }
 
-.text {
-    font-size: 1rem;
-    margin-bottom: 0.8em;
-    text-transform: initial;
-}
 
-
-
-.img {
-    width: 100%;
-    height: 100%;
-    border-radius: 1em 1em 0 0;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-.img__container {
-    height: 200px;
-    overflow: hidden;
-    margin-bottom: 1.5em;
-}
 
 .title {
     margin-bottom: 0.9em;
@@ -534,7 +520,7 @@ form #send-btn:hover {
 
 .mail {
     padding: 0.5em 0 0.5em 1.5em;
-    line-height: 3;
+    height: 40px;
     width: 100%;
     border: 1px solid #d9d9d9;
     border-radius: 0.5em;
@@ -558,15 +544,14 @@ form #send-btn:hover {
 }
 
 .subscribe {
-    color: #fff;
-    font-size: 1.3rem;
+    color: whitesmoke;
+    font-size: 1.2rem;
     font-weight: 700;
     background-color: #f55951;
     padding: 0.9em 0;
     display: inline-block;
-    border: none;
     border-radius: 0.5em;
-    width: 100%;
+    width: 40%;
     margin-bottom: 1.3em;
 }
 
@@ -582,25 +567,27 @@ form #send-btn:hover {
 
 .footer {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4e8ed;
+    background: rgb(116, 113, 113);
+    background: linear-gradient(0deg, rgba(116, 113, 113, 1) 0%, rgba(255, 255, 255, 1) 72%);
     padding-top: 100px;
 }
 
-.footer-box {
-    background-color: #f4e8ed;
-}
 
 .footer-box .share {
     font-size: 20px;
-    color: black;
     text-align: center;
+    color: #000000;
+}
+
+.footer-box .share a{
+    padding: 0 2rem;
 }
 
 .footer-box .contact {
     margin-top: 50px;
     width: 100%;
     font-size: 13px;
-    color: gray;
+    color: rgba(0, 0, 0, 0.622);
     text-align: center;
     padding-right: 70px;
 }
@@ -621,7 +608,8 @@ form #send-btn:hover {
 }
 
 .footer a {
-    color: #000
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.622);
 }
 
 #mail a {
@@ -632,7 +620,7 @@ form #send-btn:hover {
 .footer .rights p {
     text-align: center;
     font-size: 13px;
-    color: #000;
+    color: rgba(0, 0, 0, 0.622);
     padding: 20px;
     margin-bottom: 0;
 }
