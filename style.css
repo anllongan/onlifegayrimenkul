@@ -48,7 +48,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: rgb(228, 178, 119);
+    background-color: rgb(0, 5, 7);
     border-radius: 8px;
 }
 
@@ -82,8 +82,8 @@ html::-webkit-scrollbar-thumb {
 
 .navbar {
     overflow: hidden;
-    padding: 0 5rem;
-    margin: 0;
+    padding: 0;
+    margin: 0 5rem;
     height: fit-content;
     position: relative;
 }
@@ -133,7 +133,15 @@ html::-webkit-scrollbar-thumb {
     margin: auto;
     font-size: 13px;
     padding: 0 20px;
+    border: 1px solid gray;
+    transition: 1s ease;
 }
+
+.main-header .navbar .form-control:hover{
+    border: gray;
+}
+
+
 
 
 
@@ -160,7 +168,6 @@ html::-webkit-scrollbar-thumb {
 .home {
     background-image: url(img/pexels-alex-staudinger-1732414.webp);
     background-position: center;
-    
     padding: 70px 5rem;
     height: 700px;
     width: 100%;
@@ -263,7 +270,7 @@ html::-webkit-scrollbar-thumb {
     padding: 1rem 1.5rem;
     display: flex-box;
     position: absolute;
-    right: 5rem;
+    right: 7rem;
     top: 0%;
     width: 300px;
     margin: auto;
@@ -346,7 +353,7 @@ form #send-btn:hover {
     padding: 50px 5rem;
     width: 100%;
     
-    height: 800px;
+    height: 1000px;
     margin: auto;
 }
 
@@ -354,6 +361,41 @@ form #send-btn:hover {
     transition: transform 3s ease-in-out;
 }
 
+.carousel-inner .inner-container{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-content: flex-start;
+    width: 25rem;
+    height: fit-content;
+    flex-wrap: wrap;
+    z-index: 1;
+    top: 25rem;
+    left: 1rem;
+}
+
+
+.carousel-inner .inner-container div{
+    background-color: #e5e2e2c4;
+    margin: 2px;
+    justify-content: space-between;
+    display: flexbox;
+    width: 12rem;
+    height: 12rem;
+}
+
+.carousel-inner .inner-container img{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 50px;
+}
+
+.carousel-inner .inner-container div p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 15px;
+}
 
 
 /* Carousel Section End */
@@ -365,12 +407,13 @@ form #send-btn:hover {
     display: inline-block;
     width: 100%;
     height: 100%;
-    margin: 0 5rem;
+    margin: 0;
     background-color: #ffffff;
     text-align: center;
 }
 
 .ilanlar h2{
+    text-align: center;
     font-size: 30px;
     padding: 30px 0;
     font-weight: 600;
@@ -380,11 +423,11 @@ form #send-btn:hover {
 .ilanlar .sidebar {
     position: relative;
     display:flexbox;
-    width: 20%;
+    width: 15%;
     height: 100%;
     float: left;
     padding: 0;
-    margin: 0;
+    margin: 0 5rem;
     background-color: #ffffff;
 }
 
@@ -396,6 +439,16 @@ form #send-btn:hover {
     font-size: 18px;
     text-align: left;
     color: rgb(86, 86, 221);
+    
+}
+
+.ilanlar .sidebar h3:hover{
+    transform: scale(1.1);
+}
+
+
+.ilanlar .sidebar h3 a{
+    text-decoration: none;
 }
 
 .ilanlar .sidebar .list-group{
@@ -409,6 +462,10 @@ form #send-btn:hover {
     font-size: 16px;
 }
 
+.ilanlar .sidebar .list-group-item:hover{
+    transform: scale(1.1);
+}
+
 .ilanlar .sidebar .list-group-item a{
     color: black;
     text-decoration: none;
@@ -416,7 +473,7 @@ form #send-btn:hover {
 
 .ilanlar .containers {
     display: flex;
-    width: 80%;
+    width: 75%;
     height: fit-content;
     position: relative;
     float: right;
@@ -432,6 +489,11 @@ form #send-btn:hover {
     height: min-content;
     margin-top: 3rem;
     background-color: #e5e2e2;
+}
+
+.ilanlar .card .carousel{
+    height: fit-content;
+    padding: 0;
 }
 
 .ilanlar .card-body h5{
@@ -552,11 +614,6 @@ form #send-btn:hover {
 .title {
     font-size: 1.6rem;
     font-weight: 700;
-}
-
-
-
-.title {
     margin-bottom: 0.9em;
 }
 
@@ -603,7 +660,6 @@ form #send-btn:hover {
 .subscribe {
     color: whitesmoke;
     font-size: 1.2rem;
-    font-weight: 700;
     background-color: #f55951;
     padding: 0.9em 0;
     display: inline-block;
