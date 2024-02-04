@@ -137,7 +137,7 @@ html::-webkit-scrollbar-thumb {
     transition: 1s ease;
 }
 
-.main-header .navbar .form-control:hover{
+.main-header .navbar .form-control:hover {
     border: gray;
 }
 
@@ -201,7 +201,7 @@ html::-webkit-scrollbar-thumb {
     right: 30%;
     bottom: 0%;
 
-    
+
 }
 
 .home .container h3 {
@@ -350,9 +350,8 @@ form #send-btn:hover {
 
 .carousel {
     display: flex;
-    padding: 50px 5rem;
+    padding: 20px 2rem;
     width: 100%;
-    
     height: 1000px;
     margin: auto;
 }
@@ -361,7 +360,7 @@ form #send-btn:hover {
     transition: transform 3s ease-in-out;
 }
 
-.carousel-inner .inner-container{
+.carousel-inner .inner-container {
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -375,7 +374,7 @@ form #send-btn:hover {
 }
 
 
-.carousel-inner .inner-container div{
+.carousel-inner .inner-container div {
     background-color: #e5e2e2c4;
     margin: 2px;
     justify-content: space-between;
@@ -384,14 +383,14 @@ form #send-btn:hover {
     height: 12rem;
 }
 
-.carousel-inner .inner-container img{
+.carousel-inner .inner-container img {
     display: block;
     margin: auto;
     margin-top: 10px;
     width: 50px;
 }
 
-.carousel-inner .inner-container div p{
+.carousel-inner .inner-container div p {
     text-align: center;
     margin-top: 2rem;
     font-size: 15px;
@@ -412,7 +411,7 @@ form #send-btn:hover {
     text-align: center;
 }
 
-.ilanlar h2{
+.ilanlar h2 {
     text-align: center;
     font-size: 30px;
     padding: 30px 0;
@@ -422,7 +421,7 @@ form #send-btn:hover {
 
 .ilanlar .sidebar {
     position: relative;
-    display:flexbox;
+    display: flexbox;
     width: 15%;
     height: 100%;
     float: left;
@@ -431,42 +430,42 @@ form #send-btn:hover {
     background-color: #ffffff;
 }
 
-.ilanlar .sidebar span{
-    font-size: 12px;
+.ilanlar .sidebar span {
+    font-size: 1.3rem;
 }
 
-.ilanlar .sidebar h3{
+.ilanlar .sidebar h3 {
     font-size: 18px;
     text-align: left;
     color: rgb(86, 86, 221);
-    
+
 }
 
-.ilanlar .sidebar h3:hover{
+.ilanlar .sidebar h3:hover {
     transform: scale(1.1);
 }
 
 
-.ilanlar .sidebar h3 a{
+.ilanlar .sidebar h3 a {
     text-decoration: none;
 }
 
-.ilanlar .sidebar .list-group{
+.ilanlar .sidebar .list-group {
     margin: 1rem 0;
 }
 
-.ilanlar .sidebar .list-group-item{
+.ilanlar .sidebar .list-group-item {
     text-align: left;
     border: none;
     background-color: #ffffff;
     font-size: 16px;
 }
 
-.ilanlar .sidebar .list-group-item:hover{
+.ilanlar .sidebar .list-group-item:hover {
     transform: scale(1.1);
 }
 
-.ilanlar .sidebar .list-group-item a{
+.ilanlar .sidebar .list-group-item a {
     color: black;
     text-decoration: none;
 }
@@ -491,16 +490,16 @@ form #send-btn:hover {
     background-color: #e5e2e2;
 }
 
-.ilanlar .card .carousel{
+.ilanlar .card .carousel {
     height: fit-content;
     padding: 0;
 }
 
-.ilanlar .card-body h5{
+.ilanlar .card-body h5 {
     font-size: 12px;
 }
 
-.ilanlar .card-body .card-text{
+.ilanlar .card-body .card-text {
     font-size: 12px;
 }
 
@@ -514,7 +513,7 @@ form #send-btn:hover {
     background-color: #e5e2e2;
 }
 
-.ilanlar .card #link a{
+.ilanlar .card #link a {
     font-size: 15px;
 }
 
@@ -533,7 +532,7 @@ form #send-btn:hover {
 }
 
 .ilanlar .card .list-group-item {
-    padding: 5px ;
+    padding: 5px;
     background-color: #e5e2e2;
 }
 
@@ -548,7 +547,7 @@ form #send-btn:hover {
     font-size: 13px;
 }
 
-.ilanlar .card .list-group-item{
+.ilanlar .card .list-group-item {
     font-size: 13px;
 }
 
@@ -557,17 +556,17 @@ form #send-btn:hover {
     font-style: italic;
 }
 
-.pagination-bottom{
+.pagination-bottom {
     margin: 5rem;
     width: 100%;
     align-items: flex-end;
     align-self: flex-end;
-    
+
 }
 
-.pagination-bottom .pagination{
+.pagination-bottom .pagination {
     display: flex;
-    position:sticky;
+    position: sticky;
     margin: 0 10rem;
     vertical-align: bottom;
     float: right;
@@ -607,7 +606,7 @@ form #send-btn:hover {
     transition: 1s ease;
 }
 
-.wrapper .container:hover{
+.wrapper .container:hover {
     transform: scale(1.02);
 }
 
@@ -692,7 +691,7 @@ form #send-btn:hover {
     color: #000000;
 }
 
-.footer-box .share a{
+.footer-box .share a {
     padding: 0 2rem;
 }
 
@@ -745,3 +744,271 @@ form #send-btn:hover {
 
 
 /* Footer Section End */
+
+
+
+/* Media Queries for phone */
+
+@media screen and (max-width: 760px) {
+    body {
+        max-width: 760px;
+    }
+
+    .navbar{
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-fluid img {
+        width: 50px;
+    }
+
+
+
+
+    /*Home */
+
+    .home .links{
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .home .links img{
+        width: 25px;
+    }
+
+    .home .form{
+        width: calc(45%);
+        height: auto;
+        margin: 0;
+        top: 20px;
+        right: 10px;
+    }
+
+    .home .form h3{
+        font-size: 15px;
+    }
+
+    .home .form input{
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .home .form textarea{
+        height:60px;
+    }
+
+    .home .form #send-btn{
+        font-size: 10px;
+        width: min-content;
+    }
+
+
+    .home .container{
+        display: none;
+    }
+
+    /* Carousel */
+
+    .carousel{
+        height: auto;
+    }
+
+    .carousel .inner-container{
+        top: 0;
+        left: 0;
+        width: 8rem;
+        height: fit-content;
+    }
+
+    .carousel-inner .inner-container div{
+        margin: 1px;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .carousel-inner .inner-container img{
+        width: 15px;
+        margin: auto;
+        padding: 5px 0;
+    }
+
+    .carousel-inner .inner-container div p {
+        margin: 0;
+        font-size: 5px;
+    }
+
+
+    .ilanlar h2{
+        font-size: 15px;
+    }
+
+    .ilanlar .sidebar{
+        width: 35%;
+        margin: 0;
+    }
+
+    .ilanlar .sidebar h3{
+        font-size:13px;
+
+    }
+
+    .ilanlar .sidebar img{
+        width: 20px;
+    }
+
+    .ilanlar .sidebar .list-group{
+        margin: 0;
+    }
+
+    .ilanlar .sidebar .list-group-item{
+        font-size: 10px;
+    }
+
+    .ilanlar .containers{
+        width: 65%;
+    }
+
+    .ilanlar .card{
+        width: 200px;
+        height: min-content;
+    }
+    .ilanlar .card-body h5{
+        font-size: 10px;
+    }
+
+    .ilanlar .card .card-text{
+        font-size: 10px;
+    }
+
+    .ilanlar .card #link a{
+        font-size: 13px;
+    }
+
+
+    .wrapper {
+        height: fit-content;
+        padding: 1rem 5rem;
+        min-height: auto;
+    }
+
+    .wrapper .container {
+        padding: 1em;
+        padding: 10px;
+        box-shadow: 0px 0px 20px 5px rgba(153, 145, 153, 1);
+        transition: 1s ease;
+    }
+    
+    .wrapper .container:hover {
+        transform: scale(1.02);
+    }
+    
+    .title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5em;
+        font-weight: 700;
+    }
+    
+    .content {
+        display: -ms-grid;
+        display: grid;
+        place-items: center;
+        padding: 0 2em;
+        margin-bottom: .7em;
+    }
+    
+    .mail {
+        padding: 0.5em 0 0.5em 1.5em;
+        height: 30px;
+        width: 100%;
+        border: 1px solid #d9d9d9;
+        border-radius: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .subscribe{
+        width: fit-content;
+        height: fit-content;
+        font-size: 10px;
+        padding: 3px 7px;
+    }
+
+    .text{
+        font-size: 7px;
+    }
+
+    /* Footer */
+
+    .footer-box .contact {
+        margin-top: 50px;
+        width: 100%;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.622);
+        text-align: center;
+        padding-right: 0;
+        vertical-align: middle;
+    }
+    
+    .footer-box .contact h1 {
+        margin: 10px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .contact #adress{
+        width: 400px;
+    }
+
+
+
+    .footer-box .contact .box{
+        width: 100px;
+    }
+    
+    .footer-box .contact .box {
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        height: fit-content;
+        margin: 5px;
+    }
+
+    .box i{
+        font-size: 10px;
+    }
+    
+    .footer a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.622);
+    }
+    #mail{
+        width: 100px;
+    }
+    
+    #mail a {
+        text-transform: lowercase;
+    }
+    
+    
+    .footer .rights p {
+        text-align: center;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.622);
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+
+    
+
+}
