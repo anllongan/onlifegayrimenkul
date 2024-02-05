@@ -168,29 +168,51 @@ html::-webkit-scrollbar-thumb {
 .home {
     background-image: url(img/pexels-alex-staudinger-1732414.webp);
     background-position: center;
+    background-color: turquoise;
     padding: 70px 5rem;
     height: 700px;
     width: 100%;
-    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
 
-.home .links {
+.home .links{
     display: flex-box;
-    position: relative;
-    margin: 0 20px;
+    position: absolute;
+    top: calc(10%);
+    left: -6%;
 }
 
-.home .links img {
-    margin: 10px;
-    opacity: 0.7;
+.home .links div{
+    display: flex-box;
+}
+
+.home .links div a{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    width: 160px;
+    right: 5px;
+    height: auto;
+    float: right;
+    font-size: 15px;
+    background-color: rgb(163, 209, 233);
+    justify-content:space-between;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
     transition: 1s ease;
+    opacity: 0.7;
 }
 
-.home .links img:hover {
+.home .links div a:hover{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     opacity: 1;
-    transform: scale(1.1);
+    transform: translateX(100px);
+}
+
+.home .links div img{
+    width: 27px;
 }
 
 
@@ -237,11 +259,13 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .container .inputs div select {
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: rgb(228, 226, 226);
     font-size: 15px;
     height: 40px;
-    border-radius: 15px;
-    color: white;
+    width: 200px;
+    padding: 0 10px;
+    border-radius: 30px 10px;
+    color: rgb(0, 0, 0);
 }
 
 .home .container .inputs div select option:active {
@@ -350,7 +374,7 @@ form #send-btn:hover {
 
 .carousel {
     display: flex;
-    padding: 20px 2rem;
+    padding: 4rem 2rem;
     width: 100%;
     height: 1000px;
     margin: auto;
@@ -431,7 +455,7 @@ form #send-btn:hover {
 }
 
 .ilanlar .sidebar span {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .ilanlar .sidebar h3 {
@@ -587,8 +611,8 @@ form #send-btn:hover {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    padding: 100px;
-    padding-bottom: 100px;
+    padding: 50px 100px;
+    
 }
 
 .wrapper .container {
@@ -632,12 +656,15 @@ form #send-btn:hover {
 }
 
 .mail {
-    padding: 0.5em 0 0.5em 1.5em;
+    padding: 0.5em 0 0.5em 0;
     height: 40px;
     width: 100%;
     border: 1px solid #d9d9d9;
     border-radius: 0.5em;
     margin-bottom: 1em;
+    font-size: 15px;
+    text-align: center;
+    text-transform: initial;
 }
 
 ::-webkit-input-placeholder {
@@ -657,20 +684,27 @@ form #send-btn:hover {
 }
 
 .subscribe {
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.509);
     font-size: 1.2rem;
-    background-color: #f55951;
-    padding: 0.9em 0;
+    background-color: rgb(163, 209, 233);
+    padding: 0.6em ;
     display: inline-block;
     border-radius: 0.5em;
     width: 40%;
-    margin-bottom: 1.3em;
+    margin-bottom: 1em;
+}
+
+.subscribe:hover {
+    color: #000000;
+    transform: scale(1.1);
 }
 
 .text {
     font-size: 0.9rem;
     width: 90%;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 /* Subscription Section End*/
@@ -685,15 +719,8 @@ form #send-btn:hover {
 }
 
 
-.footer-box .share {
-    font-size: 20px;
-    text-align: center;
-    color: #000000;
-}
 
-.footer-box .share a {
-    padding: 0 2rem;
-}
+
 
 .footer-box .contact {
     margin-top: 50px;
@@ -719,13 +746,19 @@ form #send-btn:hover {
     margin: 50px;
 }
 
+.footer-box .contact p{
+    font-size: 12px;
+}
+
 .footer a {
     text-decoration: none;
+    font-size: 12px;
     color: rgba(0, 0, 0, 0.622);
 }
 
 #mail a {
     text-transform: lowercase;
+    font-size: 12px;
 }
 
 
@@ -740,6 +773,57 @@ form #send-btn:hover {
 .footer .rights span {
     color: #f55951;
 }
+
+
+/* About Page */
+
+.home2{
+    width: 100%;
+    height: 100vh;
+    margin: 0 50px 0 50px;
+}
+
+.home2 .bg{
+    position: absolute;
+    width: 55%;
+    margin: 0 100px;
+    height: 20%;
+    background-color: rgba(138, 234, 224, 0.374);
+
+}
+
+.home2 img{
+    position: absolute;
+    width: 50%;
+    float: right;
+    margin: 50px 0 ;
+    right: 5%;
+}
+
+.home2 .img2 img{
+    position: absolute;
+    width: 25%;
+    margin: 0px 0 ;
+    left: 15%;
+    top: 14%;
+}
+
+.home2 .content{
+    position: absolute;
+    width: 50%;
+    right: 6rem;
+    top: 55rem;
+}
+
+main{
+    margin: 200px 0;
+}
+
+
+
+
+
+
 
 
 
@@ -862,10 +946,12 @@ form #send-btn:hover {
 
     .ilanlar .sidebar .list-group{
         margin: 0;
+        
     }
 
     .ilanlar .sidebar .list-group-item{
         font-size: 10px;
+        
     }
 
     .ilanlar .containers{
@@ -1002,7 +1088,7 @@ form #send-btn:hover {
     
     .footer .rights p {
         text-align: center;
-        font-size: 13px;
+        font-size: 8px;
         color: rgba(0, 0, 0, 0.622);
         padding: 20px;
         margin-bottom: 0;
