@@ -103,23 +103,25 @@ html::-webkit-scrollbar-thumb {
 }
 
 .collapse .nav-item {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 0 20px;
 }
 
 .collapse .nav-item a {
     display: block;
-    transition: 1s ease;
+    transition: 1s ease-out;
 }
 
 .navbar-collapse .navbar-nav {
+    margin-left: 50px;
     align-items: end;
 }
 
 
 
 .collapse .nav-item a:hover {
-    transform: scale(1.2);
+    border-bottom: 1px solid rgb(163, 209, 233);
+    
 }
 
 .main-header .navbar .d-flex {
@@ -129,33 +131,27 @@ html::-webkit-scrollbar-thumb {
 
 .main-header .navbar .form-control {
     border-radius: 15px;
-    height: 40px;
+    height: 35px;
     margin: auto;
     font-size: 13px;
     padding: 0 20px;
-    border: 1px solid gray;
+    border: 1px solid rgb(163, 209, 233);
     transition: 1s ease;
 }
 
-.main-header .navbar .form-control:hover {
-    border: gray;
-}
-
-
-
-
 
 .main-header .navbar form button {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(163, 209, 233);
     border: none;
     padding: 3px 20px;
     margin: auto;
-    height: 40px;
+    height: 35px;
     font-size: 13px;
     transition: 1s ease;
 }
 
 .main-header .navbar .btn:hover {
+    background-color: black;
     color: white;
     transform: scale(1.1);
 }
@@ -399,7 +395,7 @@ form #send-btn:hover {
 
 
 .carousel-inner .inner-container div {
-    background-color: #e5e2e2c4;
+    background-color: rgba(154, 205, 232, 0.762);
     margin: 2px;
     justify-content: space-between;
     display: flexbox;
@@ -461,7 +457,7 @@ form #send-btn:hover {
 .ilanlar .sidebar h3 {
     font-size: 18px;
     text-align: left;
-    color: rgb(86, 86, 221);
+    color: rgb(163, 209, 233);
 
 }
 
@@ -656,14 +652,14 @@ form #send-btn:hover {
 }
 
 .mail {
-    padding: 0.5em 0 0.5em 0;
+    padding: 0.5em 0 0.5em 0.5em;
     height: 40px;
     width: 100%;
     border: 1px solid #d9d9d9;
     border-radius: 0.5em;
     margin-bottom: 1em;
     font-size: 15px;
-    text-align: center;
+    
     text-transform: initial;
 }
 
@@ -785,10 +781,12 @@ form #send-btn:hover {
 
 .home2 .bg{
     position: absolute;
-    width: 55%;
-    margin: 0 100px;
+    width: 40%;
+    margin: 0 300px;
     height: 20%;
-    background-color: rgba(138, 234, 224, 0.374);
+    top: 15%;
+    border-radius: 60%;
+    background-color: rgba(163, 209, 233, 0.591);
 
 }
 
@@ -798,14 +796,17 @@ form #send-btn:hover {
     float: right;
     margin: 50px 0 ;
     right: 5%;
+    border-radius: 50%;
+    opacity: 0.9;
 }
 
 .home2 .img2 img{
     position: absolute;
+    border-radius: 50%;
     width: 25%;
     margin: 0px 0 ;
-    left: 15%;
-    top: 14%;
+    left: 10%;
+    top: 20%;
 }
 
 .home2 .content{
