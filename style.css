@@ -225,7 +225,6 @@ html::-webkit-scrollbar-thumb {
 .home .container h3 {
     font-weight: 600;
     font-size: 2rem;
-    text-align: left;
     padding: 5px 40px 5px 30px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -236,7 +235,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .container .inputs {
-    opacity: 1;
+    
     display: flex;
     margin: auto;
     align-items: center;
@@ -422,95 +421,67 @@ form #send-btn:hover {
 
 /* İlan Section Start */
 #ilanlar {
-    position: relative;
+    position:relative;
     display: inline-block;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
     background-color: #ffffff;
     text-align: center;
 }
 
-.ilanlar h2 {
+#ilanlar h2 {
     text-align: center;
     font-size: 30px;
     padding: 30px 0;
     font-weight: 600;
 }
 
-
-.ilanlar .sidebar {
-    position: relative;
-    display: flexbox;
-    width: 15%;
-    height: 100%;
-    float: left;
-    padding: 0;
-    margin: 0 5rem;
-    background-color: #ffffff;
-}
-
-.ilanlar .sidebar span {
-    font-size: 1rem;
-}
-
-.ilanlar .sidebar h3 {
-    font-size: 18px;
-    text-align: left;
-    color: rgb(163, 209, 233);
-
-}
-
-.ilanlar .sidebar h3:hover {
-    transform: scale(1.1);
-}
-
-
-.ilanlar .sidebar h3 a {
-    text-decoration: none;
-}
-
-.ilanlar .sidebar .list-group {
-    margin: 1rem 0;
-}
-
-.ilanlar .sidebar .list-group-item {
-    text-align: left;
-    border: none;
-    background-color: #ffffff;
-    font-size: 16px;
-}
-
-.ilanlar .sidebar .list-group-item:hover {
-    transform: scale(1.1);
-}
-
-.ilanlar .sidebar .list-group-item a {
-    color: black;
-    text-decoration: none;
-}
-
-.ilanlar .containers {
+aside {
     display: flex;
-    width: 75%;
+    width: 10%;
+    align-items: start;
+    float: left;
+    margin: 10px 0 0 4rem;
+    padding: 10px;
+}
+
+aside #filters {
+    display: grid;
+}
+
+
+aside #filters span {
+    text-align: left;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 17px;
+    color: black;
+    transition: .2s ease;
+} 
+
+#ilanlar .ilan-list {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
     height: fit-content;
     position: relative;
     float: right;
-    margin: 0;
+    margin: 0 0rem 0 0;
+    padding: 0;
     flex-wrap: wrap;
+    list-style: none;
 }
 
-.ilanlar .card {
-    display: block;
-    flex-wrap: wrap;
-    margin: 0 2rem;
+#ilanlar .ilan-list .ilan{
     width: 250px;
-    height: min-content;
-    margin-top: 3rem;
-    background-color: #e5e2e2;
+    margin: 20px 20px;
+    padding: 0;
+    height: fit-content;
+    box-shadow: 0px 0px 15px -4px rgba(0,0,0,1);
 }
 
-.ilanlar .card .carousel {
+.ilanlar .ilan-list .carousel {
     height: fit-content;
     padding: 0;
 }
@@ -521,38 +492,42 @@ form #send-btn:hover {
 
 .ilanlar .card-body .card-text {
     font-size: 12px;
+    height: 80px;
 }
 
 
 
-.ilanlar .card:hover {
+.ilanlar .ilan:hover {
     transform: scale(1.01);
 }
 
-.ilanlar .card #link {
+.ilanlar #link {
+    vertical-align: bottom;
     background-color: #e5e2e2;
 }
 
-.ilanlar .card #link a {
+.ilanlar  #link a {
     font-size: 15px;
 }
 
-.ilanlar .card #link:hover {
+.ilanlar  #link:hover {
     background-color: #f4e0e9d7;
 }
 
-.ilanlar .card #link:hover a {
+.ilanlar #link:hover a {
     font-size: 15px;
 
 }
 
-.ilanlar .card .list-group {
+.ilanlar .list-group {
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 15px;
 }
 
-.ilanlar .card .list-group-item {
+.ilanlar  .list-group-item {
     padding: 5px;
+    
+    font-size: 13px;
     background-color: #e5e2e2;
 }
 
@@ -594,6 +569,84 @@ form #send-btn:hover {
 
 /* İlan Section End */
 
+
+/* Input Section Start */
+fieldset {
+    visibility: visible; /* İnput alanını açıp kapatmak için */
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 20%;
+    height: fit-content;
+    min-width: 400px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto 0;
+    position: relative;
+    padding: 50px;
+}
+
+fieldset legend{
+    text-align: center;
+    background-color: orange;
+    margin: 10px 0;
+    padding: 0;
+}
+
+fieldset .imgInput {
+    padding: 10px;
+    font-size: 13px;
+    align-items: start;
+}
+
+fieldset input {
+    width: max-content;
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.448);
+}
+
+fieldset #filter Input{
+    padding: 0;
+    margin: 20px 10px;
+    width:300px;
+}
+
+
+fieldset input::placeholder{
+    color: black;
+    font-size: 14px;
+}
+
+fieldset #filterInput .filter{
+    margin: 0 10px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+}
+
+#filterInput .filter label{
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+#filterInput .filter input{
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset .btn {
+    padding: 7px 10px;
+    float: right;
+    background-color: orange;
+    margin: 10px 0;
+    
+}
+
+/* Input Section End */
 
 
 /* Subscription Section Start */
